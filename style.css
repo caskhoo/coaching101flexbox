@@ -1,0 +1,20 @@
+:root {
+    --spacing: 5rem;
+}
+.image__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0 0 calc(-1 * (--spacing));
+}
+.image__item {
+    width: calc((100% / 3) - var(--spacing))%;
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
